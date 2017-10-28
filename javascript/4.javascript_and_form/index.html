@@ -1,0 +1,97 @@
+<html>
+    <head>
+       <meta charset="utf-8">
+        <title></title>
+        <style>
+            span{
+                color: dodgerblue;
+                font-family: cursive;
+            }
+            input{
+                display: block;
+                margin: 5px;
+                color: #be4444;
+                 margin-left: auto;
+                margin-right: auto
+            }
+            
+            .Hello{
+                text-align: center;
+                color: #be4444;
+
+            }
+            
+            div{
+                margin-top: 40px;
+                border: 2px dashed dodgerblue;
+                background-color: #c2f4ec;
+            }
+        </style>
+    </head>
+    <body>
+    <h1 class="Hello">Реєстрація</h1>
+    <input type="text" id="txt" placeholder="Press Your Name"/>
+    <input type="password" id="pa" placeholder="Press Your Password"/>
+    <input type="button" id="btn" value="Жмакни меня" >
+    <div>
+    <h1 id="bt">Your name is <span id="span"></span></h1>
+    <h1 id="bt">Your password is <span id="spad"></span></h1>
+    <p id="ok"></p>
+        </div>
+    
+<script>
+function someFunc(){
+    var a = document.getElementById("txt").value;
+    document.getElementById("span").innerHTML = a;
+    
+    var d = document.getElementById("pa").value;
+    document.getElementById("spad").innerHTML = d;
+    
+   if(d.length > 8){
+         document.getElementById("ok").innerHTML = "Your password is ok";
+         document.getElementById("ok").style.color = "green"; 
+      }else{
+          document.getElementById("ok").innerHTML = "Your password is too short";
+         document.getElementById("ok").style.color = "red"; 
+      }
+}
+      document.getElementById("btn").onclick = someFunc;
+</script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

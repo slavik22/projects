@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	  <html>
+	  <head>
+		<title></title>
+			<style type="text/css">
+
+         .container {
+			float:left;
+			margin:10px;
+			-webkit-perspective: 500px;
+			perspective: 500px;
+
+
+         }
+		.card {
+		     width: 150px;
+        	height: 150px;
+	        border-radius: 100px;
+			background-color:#ff1a66;
+			transition:transform 0.5s;
+			font-size: 20px;  			
+            box-sizing:border-box;
+            padding-top: 60px;
+            padding-left: 40px;
+            color:white;
+
+		}
+		.container:hover > .card {
+			transform:rotateX(180deg);
+		}
+		</style>
+	</head>
+		<body>
+	<div  class="container">
+		<div class="card" style="background-color:#556B2F;">News</div>
+		</div>
+	<div class="container">
+		<div class="card" style="background-color:red;">Weather</div>
+		</div>
+	<div class="container">
+		<div class="card" style="background-color:#D2691E;">Sport</div>
+		</div>
+	<div class="container">
+		<div class="card" style="background-color:#64A864;">Drama</div>
+		</div>
+	<div class="container">
+		<div class="card" style="background-color:#8A2BE2;">Shows</div>
+		</div>
+	<div class="container">
+		<div class="card" style="background-color:#006400;">Intervies</div>
+		</div>
+        </body>
+        </html>

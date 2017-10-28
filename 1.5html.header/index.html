@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        ul.sidenav {
+            list-style-type: none;
+            width: 200px;
+            height: 100%;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+        }
+        
+        ul.sidenav li a {
+            text-decoration: none;
+            padding: 8 16;
+            display: block;
+            color: #000;
+        }
+        
+        ul.sidenav li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        ul.sidenav li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+        @media screen and (max-width:900px) {
+            ul.sidenav {
+                width: 100%;
+                height: auto;
+            }
+            ul.sidenav li a {
+                float: left;
+                padding: 15px;
+            }
+        }
+        
+        @media screen and (max-width:400px) {
+            ul.sidenav {
+                width: 100%;
+                height: 20%;
+            }
+            ul.sidenav li a {
+                float: none;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="sidenav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Реєстрація</title>
+	</head>
+	<body>
+		<h1 align="center">Реєстрація</h1>
+		<form>
+			<fieldset>
+				<legend>Безпека</legend>
+				<label for="name">Як вас звати?</label><br>
+				<input type="text" placeholder="Ім'я" required autofocus>
+				<input type="text" placeholder="Фамілія" required><br><br>
+				<label>
+					Логін
+					<input type="text" placeholder="логін" required > 
+				</label><br>
+				<label>
+					Пароль
+					<input type="password" placeholder="пароль" required>
+				</label><br>
+				<label>
+					Почта
+					<input type="mail" placeholder="почта" required>
+				</label><br><br>
+				<label>
+					Male	
+					<input type="radio" name="1" required>
+				</label>
+				<label>
+					Female	
+					<input type="radio" name="1" required>
+				</label><br><br>
+			</fieldset>
+			<fieldset>
+				<legend>Про себе</legend>
+				<label>
+					Дата народження
+					<input type="date" required>
+				</label><br><br>
+				<label>
+					Рідне місто
+					<select>
+						<optgroup label="Закарпаття">
+							<option>Ужгород</option>
+							<option>Мукачево</option>
+							<option>Хуст</option>
+						</optgroup>
+						<optgroup label="Львівщина">
+							<option>Львів</option>
+							<option>Стрий</option>
+						</optgroup>
+					</select><br><br>
+				</label>
+				<label>
+					Хоббі
+					<textarea placeholder="Введіть своє хоббі"></textarea>
+				</label><br><br>
+				
+			</fieldset>
+			<input type="checkbox" required>Я надаю згоду до Угоди про конфіденційність і приймаю її умови.<br>
+			<button align="center" >Welcome</button>
+		</form>
+	</body>
+</html>

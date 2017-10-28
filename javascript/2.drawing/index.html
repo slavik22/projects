@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The first game by JavaScript </title>
+        <style>
+            #face{
+                background-color: #bdc1c0;
+                height: 150px;
+            }
+            .beard{
+                background: black;
+                width: 5px;
+                height: 5px;
+                position: absolute;
+                border-radius: 100px;
+                
+            }
+        </style>
+    </head>
+    <body>
+    <div id="face"></div>
+    <button id="clear" onclick="fuc()">Clear board now</button>
+    <script>
+        var face = document.getElementById("face");
+        var onMouseMove = function(event){
+            var beard = document.createElement("div");
+            beard.className = "beard";
+            document.body.appendChild(beard);
+            beard.style.top = event.clientY + "px";
+            beard.style.left = event.clientX + "px";
+        }
+        
+        face.addEventListener("mousemove", onMouseMove );
+        
+        function fuc(){ 
+        }    
+        
+    </script>
+    </body>
+</html>

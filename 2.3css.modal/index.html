@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>
+		CSS Modal Window
+	</title>
+	<style>
+		body {
+			font-family: sans-serif;
+    		background-color: #4CAF50;
+    		margin:0;
+    		overflow:hidden;
+		}
+		a.button {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 2em;
+			transform: translate(-50%, -50%);
+			background-color: #1A6D1D;
+			padding: 0.5em 1em;
+			color: white;
+			border: 3px solid #135415;
+			text-decoration: none;
+			z-index:1;
+			opacity:1;
+			transition:all 0.3s ease;
+		}
+		#modal:target + a {
+			opacity:0;
+		}
+		#modal {
+			opacity:0;
+			width: 60%;
+		    padding: 1em;
+		    color: #FFEB3B;
+		    margin: 0 auto;
+		    background-color: #F44336;
+		    font-size:1.3em;
+		    position:absolute;
+		    top:0;
+			left:50%;
+			transform: translate(-50%, -100%);
+			z-index:-1;
+			transition:all 0.3s ease;
+		}
+		h1 {
+			text-align:center;
+		}
+		#modal:target {
+			opacity:1;
+			z-index:3;
+			transform: translate(-50%, 0%);
+		}
+		.close {
+		    display: block;
+		    width: 50px;
+		    height: 50px;
+		    position: absolute;
+		    font-size: 25px;
+		    text-align: center;
+		    color: white;
+		    top: 0;
+		    font-weight: bold;
+		    line-height: 50px;
+		    right: 0;
+		    background-color: #CC261A;
+		    text-decoration:none;
+		}
+		.overlay {
+			background-color:#FFF;
+			opacity:0;
+			position:absolute;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			transition:all 0.3s ease;
+			cursor:default;
+		}
+		#modal:target + a + .overlay {
+			opacity:0.3;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="modal">
+		<h1>Modal Window</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat doloremque, ut temporibus maiores odio, optio amet quas repudiandae qui inventore, est quaerat perspiciatis sunt nisi voluptas dolorum quo debitis?</p>
+		<a class="close" href="#">+</a>
+	</div>
+	<a href="#modal" class="button">Modal</a>
+	<a class="overlay" href="#"></a>
+</body>
+</html>
